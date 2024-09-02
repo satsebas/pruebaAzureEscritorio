@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ZenZap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+    <link rel="stylesheet" href="../proyecto_final/src/estilo.css">
+    <script src="validar.js"></script>
+</head>
+
+<body>
+    <!--encabezado-->
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark p-3">
+        <div class="container-fluid ">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
+                aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand text-white fw-bold" href="#">ZenZap</a>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active text-white" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#sobreNosotros">Sobre nosotros</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#precios">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#" data-bs-toggle="modal"
+                            data-bs-target="#registrarse">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="#" data-bs-toggle="modal"
+                            data-bs-target="#inicio_Sesion">Inicio de sesion</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!--Carrusel-->
+    <div id="miCarusel" class="carousel slide" data-bs-ride="true">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="https://cdn.pixabay.com/photo/2016/02/10/21/59/landscape-1192669_1280.jpg"
+                    class="d-block w-100" width="500" height="700" alt="error">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Encuentra tu Equilibrio</h4>
+                    <p>"Un pequeño paso hacia la salud hoy, es un gran avance para tu bienestar futuro."</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="https://images.pexels.com/photos/5262737/pexels-photo-5262737.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                    class="d-block w-100" width="500" height="700" alt="error">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Cuida tu Cuerpo</h4>
+                    <p>"Tu cuerpo es el único lugar en el que tienes que vivir; cuídalo bien."</p>
+                </div>
+
+            </div>
+            <div class="carousel-item">
+                <img src="https://cdn.pixabay.com/photo/2017/08/20/15/51/woman-2662237_1280.jpg" class="d-block w-100"
+                    width="500" height="700" alt="error">
+                <div class="carousel-caption d-none d-md-block">
+                    <h4>Prioriza tu Bienestar</h4>
+                    <p>"El autocuidado no es egoísmo; es una necesidad para estar en tu mejor versión."</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#miCarusel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#miCarusel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <br><br>
+    <!--sobre nosotros-->
+    <div class="container fondo_Container">
+        <div class="row featurette">
+            <div class="col-md-12 text-center">
+                <h1 class="featurette-heading fw-normal lh-1 text-white fw-bold bg-dark p-3" id="sobreNosotros">Sobre
+                    nosotros</h1>
+                <br><br>
+            </div>
+            <div class="col-md-7">
+                <h2 class="featurette-heading fw-normal lh-1 text-center fw-bold">Descubre ZenZap: ¡Tu Compañero de
+                    Bienestar en
+                    el Trabajo!
+                </h2>
+                <br>
+                <p class="lead texto__justify">En un mundo donde el trabajo de oficina y las largas horas frente a la
+                    pantalla son la
+                    norma, mantenerse activo puede ser un desafío. Ahí es donde entra ZenZap, tu compañero de oficina
+                    virtual diseñado para mantenerte en movimiento y mejorar tu bienestar diario.</p>
+                <br>
+                <p class="lead texto__justify">ZenZap no es solo una aplicación; es tu aliado dedicado a combatir el
+                    sedentarismo.
+                    Imagina
+                    tener un asistente personal que, de manera amable y constante, te recuerda que es momento de
+                    levantarte
+                    y moverte. Pero no se queda solo en recordatorios. ZenZap va un paso más allá, proporcionándote una
+                    serie de estiramientos y ejercicios que puedes realizar fácilmente, incluso en tu espacio de
+                    trabajo.
+                </p>
+            </div>
+            <div class="col-md-5">
+                <img src="https://cdn.pixabay.com/photo/2017/10/10/21/49/blogger-2838945_1280.jpg" class="d-block w-100"
+                    width="400" height="400" alt="error">
+            </div>
+        </div>
+        <div class="row featurette">
+            <div class="col-md-5">
+                <br>
+                <img src="./recursos/logo2.png" class="d-block w-100 rounded-circle" width="400" height="400"
+                    alt="error">
+            </div>
+            <div class="col-md-7">
+                <br><br><br>
+                <h2 class="featurette-heading fw-normal lh-1 text-center fw-bold ">¿Qué puedes esperar de ZenZap?</h2>
+                <br>
+                <p class="lead texto__justify">La integración de pausas activas regulares con ZenZap no solo mejora tu
+                    salud física al
+                    reducir los efectos negativos del sedentarismo, sino que también aumenta tu bienestar mental y tu
+                    productividad. Al realizar estos breves ejercicios, aumentas tu energía, mejoras tu postura y
+                    revitalizas tu mente, lo que te permite abordar tus tareas con un enfoque renovado y una mayor
+                    eficiencia.</p>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!--Sobre nosotros- tarjetas-->
+    <div class="container text-center fondo_Container">
+        <div class="row">
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1182/1182718.png" width="130" height="130"></img>
+                    <p class="card__title">Recordatorios Inteligentes</p>
+                    <div class="card__content">
+                        <p class="card__description">ZenZap te envía notificaciones en el momento perfecto, justo cuando
+                            necesitas un descanso, para
+                            recordarte que es hora de moverte. No más horas inmóviles sin darte cuenta del tiempo que
+                            pasa;
+                            ZenZap te mantiene en control de tu bienestar.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="https://images.vexels.com/media/users/3/303899/isolated/preview/abe06c3a46ceef4dc104c2361a66543f-pinga-ino-de-dibujos-animados-levantando-una-barra.png"
+                        width="140" height="140"></img>
+                    <p class="card__title">Biblioteca de Ejercicios</p>
+                    <div class="card__content">
+                        <p class="card__description">ZenZap te ofrece una amplia
+                            variedad de estiramientos y
+                            ejercicios adaptados a tus necesidades y al entorno de tu oficina. Cada sugerencia está
+                            diseñada
+                            paraser rápida y efectiva, asegurando que puedes volver a tus tareas sintiéndote renovado y
+                            revitalizado</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="https://cdn.pixabay.com/photo/2022/08/30/08/04/brain-7420599_1280.png" width="140"
+                        height="140"></img>
+                    <p class="card__title">Guía y Motivación Constante</p>
+                    <div class="card__content">
+                        <p class="card__description">ZenZap actúa como tu entrenador personal, guiándote a través de
+                            cada movimiento y brindándote la
+                            motivación que necesitas para mantenerte activo. Ya no estarás solo en tu camino hacia un
+                            estilo de
+                            vida
+                            más saludable.</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="col-lg-3">
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/2692/2692980.png" width="130" height="130"></img>
+                    <p class="card__title">Establecimiento de Metas de Salud</p>
+                    <div class="card__content">
+                        <p class="card__description">Con ZenZap, puedes fijar objetivos de salud y bienestar
+                            personalizados. Ya sea que busques aumentar la frecuencia de tus pausas, mejorar tu
+                            flexibilidad o simplemente moverte más a lo largo del día, ZenZap te ayuda a establecer y
+                            alcanzar tus metas</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+    <!--modal inicio de sesion-->
+    <div class="modal fade" id="inicio_Sesion">
+        <div class="modal-dialog modal-content">
+            <div class="formulario">
+                <br>
+                <h1>Inicio de Sesion</h1>
+                <form method="post" name="loguin" action="paginaUsuaarios.html" onsubmit="return loguear(this)">
+                    <div class="username">
+                        <input type="text" id="usuario" required>
+                        <label>Nombre de usuario</label>
+                    </div>
+                    <div class="username">
+                        <input type="password" id="pass" required>
+                        <label>Ingrese su contraseña</label>
+                        <br>
+                    </div>
+                    <div class="recordar">¿Olvido su contraseña?</div>
+                    <input type="submit" value="Iniciar">
+                    <div class="registrarse">
+                        Quieres hacer el <a href="#registro" data-bs-toggle="modal"
+                            data-bs-target="#registrarse">registro</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <br><br>
+
+    <!--modal registrarse-->
+
+    <div class="modal fade" id="registrarse">
+        <div class="modal-dialog modal-content">
+            <div class="formulario">
+                <br>
+                <h1>Registrarse</h1>
+                <form action="post">
+                    <div class="username">
+                        <input type="text" required>
+                        <label>Ingrese su correo</label>
+                    </div>
+                    <div class="username">
+                        <input type="password" required>
+                        <label>Ingrese su contraseña</label>
+                        <br>
+                    </div>
+                    <div class="username">
+                        <input type="password" required>
+                        <label>confirmar contraseña</label>
+                        <br>
+                    </div>
+                    <div class="recordar">¿Ya tienes un usuario?</div>
+                    <input type="submit" value="Registrarse">
+                    <div class="registrarse">
+                        Quieres inciar <a href="#registro" data-bs-toggle="modal"
+                            data-bs-target="#inicio_Sesion">sesion</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--precios-->
+    <div class="container d-flex justify-content-center text-center fondo_Container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="featurette-heading fw-normal lh-1 text-white fw-bold bg-dark p-3" id="precios">Nuestros
+                    Precios</h1>
+                <br><br>
+            </div>
+            <div class="col-md-4">
+                <div class="cardPrecios">
+                    <div class="cardPrecios-img ">
+                        <img src="https://cdn.pixabay.com/photo/2022/08/03/05/51/woman-7361922_1280.png" width="130"
+                            height="130"></img>
+                    </div>
+                    <div class="cardPrecios-info">
+                        <p class="text-title text-center">Usuario Estandar</p>
+                        <p class="text-body text-center">ZenZap para usuario unico acceso limitado a ejercicios de
+                            pausas activas y recordatorios</p>
+                    </div>
+                    <div class="cardPrecios-footer">
+                        <span class="text-title">Gratis</span>
+                        <div class="cardPrecios-button">
+                            <svg class="svg-icon" data-bs-toggle="modal" data-bs-target="#registrarse"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                                </path>
+                                <path
+                                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                                </path>
+                                <path
+                                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 text-center">
+                <div class="cardPrecios">
+                    <div class="cardPrecios-img">
+                        <img src="https://cdn.pixabay.com/photo/2014/04/03/10/38/yoga-310940_1280.png" width="120"
+                            height="120"></img>
+                    </div>
+                    <div class="cardPrecios-info">
+                        <p class="text-title text-center">Plan pago usuarios</p>
+                        <p class="text-body text-center">incluye: todos los ejercicios disponibles, recordatorios
+                            ilimitados y analisis del progreso </p>
+                    </div>
+                    <div class="cardPrecios-footer">
+                        <span class="text-title">$35.000</span>
+                        <div class="cardPrecios-button">
+                            <svg class="svg-icon" data-bs-toggle="modal" data-bs-target="#registrarse"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                                </path>
+                                <path
+                                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                                </path>
+                                <path
+                                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="cardPrecios">
+                    <div class="cardPrecios-img">
+                        <img src="https://cdn.pixabay.com/photo/2012/04/18/14/54/yoga-37263_1280.png" width="160"
+                            height="120"></img>
+                    </div>
+                    <div class="cardPrecios-info">
+                        <p class="text-title text-center">Plan Empresarial</p>
+                        <p class="text-body text-center">Incluye: generacion de informes sobre los empleados,listados de
+                            ejercicios, notificaciones </p>
+                    </div>
+                    <div class="cardPrecios-footer">
+                        <span class="text-title">$150.000</span>
+                        <div class="cardPrecios-button">
+                            <svg class="svg-icon" data-bs-toggle="modal" data-bs-target="#registrarse"
+                                viewBox="0 0 20 20">
+                                <path
+                                    d="M17.72,5.011H8.026c-0.271,0-0.49,0.219-0.49,0.489c0,0.271,0.219,0.489,0.49,0.489h8.962l-1.979,4.773H6.763L4.935,5.343C4.926,5.316,4.897,5.309,4.884,5.286c-0.011-0.024,0-0.051-0.017-0.074C4.833,5.166,4.025,4.081,2.33,3.908C2.068,3.883,1.822,4.075,1.795,4.344C1.767,4.612,1.962,4.853,2.231,4.88c1.143,0.118,1.703,0.738,1.808,0.866l1.91,5.661c0.066,0.199,0.252,0.333,0.463,0.333h8.924c0.116,0,0.22-0.053,0.308-0.128c0.027-0.023,0.042-0.048,0.063-0.076c0.026-0.034,0.063-0.058,0.08-0.099l2.384-5.75c0.062-0.151,0.046-0.323-0.045-0.458C18.036,5.092,17.883,5.011,17.72,5.011z">
+                                </path>
+                                <path
+                                    d="M8.251,12.386c-1.023,0-1.856,0.834-1.856,1.856s0.833,1.853,1.856,1.853c1.021,0,1.853-0.83,1.853-1.853S9.273,12.386,8.251,12.386z M8.251,15.116c-0.484,0-0.877-0.393-0.877-0.874c0-0.484,0.394-0.878,0.877-0.878c0.482,0,0.875,0.394,0.875,0.878C9.126,14.724,8.733,15.116,8.251,15.116z">
+                                </path>
+                                <path
+                                    d="M13.972,12.386c-1.022,0-1.855,0.834-1.855,1.856s0.833,1.853,1.855,1.853s1.854-0.83,1.854-1.853S14.994,12.386,13.972,12.386z M13.972,15.116c-0.484,0-0.878-0.393-0.878-0.874c0-0.484,0.394-0.878,0.878-0.878c0.482,0,0.875,0.394,0.875,0.878C14.847,14.724,14.454,15.116,13.972,15.116z">
+                                </path>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <!--footer-->
+    <footer class="bg-dark text-white p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 text-center">
+                    <h4 class="fw-bold">ZenZap</h4>
+                    <br>
+                    <a href="#sobreNotros" class="text-white QuitarDelineado">
+                        <h6>Sobre nosotros</h6>
+                    </a>
+                    <a href="#precios" class="text-white QuitarDelineado">
+                        <h6>Precios</h6>
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#registrarse" class="text-white QuitarDelineado">
+                        <h6>Registrarse</h6>
+                    </a>
+                    <a href="#" data-bs-toggle="modal" data-bs-target="#inicio_Sesion"
+                        class="text-white QuitarDelineado">
+                        <h6>Inicio de sesion</h6>
+                    </a>
+                </div>
+                <div class="col-4 text-center">
+                    <h4 class="fw-bold">Contáctenos</h4>
+                    <br>
+                    <a href="https://es-la.facebook.com/" class="QuitarDelineado">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path
+                                d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951" />
+                        </svg>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://web.whatsapp.com/" class="QuitarDelineado">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-whatsapp" viewBox="0 0 16 16">
+                            <path
+                                d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+                        </svg>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://www.instagram.com/?hl=es" class="QuitarDelineado">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path
+                                d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334" />
+                        </svg>
+                    </a>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="https://x.com/i/flow/login" class="QuitarDelineado">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                            class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path
+                                d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z" />
+                        </svg>
+                    </a>
+                </div>
+                <div class="col-4 text-center">
+                    <h4 class="fw-bold">Datos adicionales</h4>
+                    <br>
+                    <a href="https://www.google.com/maps/place/SENA+-+Centro+de+Tecnolog%C3%ADa+de+la+Manufactura+Avanzada/@6.3025999,-75.5705136,17z/data=!4m10!1m2!2m1!1ssena+pedregal!3m6!1s0x8e442f25d6670d4d:0x8043999e5e767b96!8m2!3d6.302048!4d-75.5685611!15sCg1zZW5hIHBlZHJlZ2FsIgOIAQFaDyINc2VuYSBwZWRyZWdhbJIBEGVkdWNhdGlvbl9jZW50ZXKaASRDaGREU1VoTk1HOW5TMFZKUTBGblNVUTJiMTl1UVhaM1JSQULgAQA!16s%2Fg%2F1trqj853?entry=ttu"
+                        class="QuitarDelineado">
+                        <h6>#104, Complejo Norte Carrera 68, Medellín, Antioquia</h6>
+
+                    </a>
+                    <h6>Telefono: 604123455</h6>
+                </div>
+                <div class="col-12 text-center">
+                    <br>
+                    <h6>© 2024 ZenZap. Todos los derechos reservados. </h6>
+                    <br>
+                    <h6>Creado por: Sebastian Arango</h6>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
